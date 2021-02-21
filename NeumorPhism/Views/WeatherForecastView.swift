@@ -22,6 +22,9 @@ struct WeatherForecastView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                
+                LocationView()
+                
                 NowWeatherSummary(viewModel: viewModel)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -34,11 +37,11 @@ struct WeatherForecastView: View {
                 .padding(.top, 16)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    ForEach(self.viewModel.weatherData.daysForecastData, id: \.self) {
-                      DaySummaryView(forecast: $0)
+                    VStack {
+                        ForEach(self.viewModel.weatherData.daysForecastData, id: \.self) {
+                            DaySummaryView(forecast: $0)
+                        }
                     }
-                  }
                 }
             }
         }

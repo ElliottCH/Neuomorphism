@@ -21,7 +21,47 @@
 		4E96A90725E246AB00CEF280 /* WeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96A90625E246AB00CEF280 /* WeatherForecastView.swift */; };
 		4E96A90B25E246E300CEF280 /* NowWeatherSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96A90A25E246E300CEF280 /* NowWeatherSummary.swift */; };
 		4E96A90E25E2471900CEF280 /* HoursSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96A90D25E2471900CEF280 /* HoursSummary.swift */; };
+		4EF0012225E24CD5002B376D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF0012125E24CD5002B376D /* WidgetKit.framework */; };
+		4EF0012425E24CD5002B376D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF0012325E24CD5002B376D /* SwiftUI.framework */; };
+		4EF0012725E24CD5002B376D /* TinyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0012625E24CD5002B376D /* TinyWeather.swift */; };
+		4EF0012A25E24CD6002B376D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF0012925E24CD6002B376D /* Assets.xcassets */; };
+		4EF0012C25E24CD6002B376D /* TinyWeather.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0012825E24CD5002B376D /* TinyWeather.intentdefinition */; };
+		4EF0012D25E24CD6002B376D /* TinyWeather.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0012825E24CD5002B376D /* TinyWeather.intentdefinition */; };
+		4EF0013025E24CD6002B376D /* TinyWeatherExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4EF0011F25E24CD5002B376D /* TinyWeatherExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4EF0013925E2CBE2002B376D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E227F2E25E1C01C00FE2968 /* Color+Extension.swift */; };
+		4EF0013C25E2D092002B376D /* SoftInnerShadowViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E96A8FE25E219D900CEF280 /* SoftInnerShadowViewModifier.swift */; };
+		4EF0013F25E2D09B002B376D /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E47D36F25E16B80007442E3 /* WeatherModel.swift */; };
+		4EF0014225E2D0A8002B376D /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1E135E25E1591000580CD0 /* WeatherViewModel.swift */; };
+		4EF0014525E2D332002B376D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1E132E25E0598800580CD0 /* Assets.xcassets */; };
+		4EF0015625E3047A002B376D /* Int+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E47D36925E16046007442E3 /* Int+extension.swift */; };
+		4EF0015B25E3057D002B376D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0015A25E3057D002B376D /* View+Extension.swift */; };
+		4EF0016125E305AD002B376D /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0016025E305AD002B376D /* LocationView.swift */; };
+		4EF0016825E30684002B376D /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF0015A25E3057D002B376D /* View+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EF0012E25E24CD6002B376D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E1E131D25E0598800580CD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EF0011E25E24CD5002B376D;
+			remoteInfo = TinyWeatherExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4EF0013125E24CD6002B376D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4EF0013025E24CD6002B376D /* TinyWeatherExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4E1E132525E0598800580CD0 /* NeumorPhism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeumorPhism.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +80,15 @@
 		4E96A90625E246AB00CEF280 /* WeatherForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastView.swift; sourceTree = "<group>"; };
 		4E96A90A25E246E300CEF280 /* NowWeatherSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowWeatherSummary.swift; sourceTree = "<group>"; };
 		4E96A90D25E2471900CEF280 /* HoursSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursSummary.swift; sourceTree = "<group>"; };
+		4EF0011F25E24CD5002B376D /* TinyWeatherExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TinyWeatherExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EF0012125E24CD5002B376D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4EF0012325E24CD5002B376D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4EF0012625E24CD5002B376D /* TinyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyWeather.swift; sourceTree = "<group>"; };
+		4EF0012825E24CD5002B376D /* TinyWeather.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = TinyWeather.intentdefinition; sourceTree = "<group>"; };
+		4EF0012925E24CD6002B376D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EF0012B25E24CD6002B376D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF0015A25E3057D002B376D /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		4EF0016025E305AD002B376D /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +99,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EF0011C25E24CD5002B376D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF0012425E24CD5002B376D /* SwiftUI.framework in Frameworks */,
+				4EF0012225E24CD5002B376D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				4E1E132725E0598800580CD0 /* NeumorPhism */,
+				4EF0012525E24CD5002B376D /* TinyWeather */,
+				4EF0012025E24CD5002B376D /* Frameworks */,
 				4E1E132625E0598800580CD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				4E1E132525E0598800580CD0 /* NeumorPhism.app */,
+				4EF0011F25E24CD5002B376D /* TinyWeatherExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +142,6 @@
 				4E1E133325E0598800580CD0 /* LaunchScreen.storyboard */,
 				4E1E133625E0598800580CD0 /* Info.plist */,
 				4E1E133025E0598800580CD0 /* Preview Content */,
-				4E47D36925E16046007442E3 /* Int+extension.swift */,
 			);
 			path = NeumorPhism;
 			sourceTree = "<group>";
@@ -123,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				4E96A8FE25E219D900CEF280 /* SoftInnerShadowViewModifier.swift */,
+				4EF0015A25E3057D002B376D /* View+Extension.swift */,
 			);
 			path = Neuomorphism;
 			sourceTree = "<group>";
@@ -131,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4E96A90625E246AB00CEF280 /* WeatherForecastView.swift */,
+				4EF0016025E305AD002B376D /* LocationView.swift */,
 				4E96A90A25E246E300CEF280 /* NowWeatherSummary.swift */,
 				4E96A90D25E2471900CEF280 /* HoursSummary.swift */,
 				4E1E132C25E0598800580CD0 /* DaySummaryView.swift */,
@@ -149,10 +211,31 @@
 		4E96A91225E2474E00CEF280 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4E47D36925E16046007442E3 /* Int+extension.swift */,
 				4E1E132825E0598800580CD0 /* AppDelegate.swift */,
 				4E1E132A25E0598800580CD0 /* SceneDelegate.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		4EF0012025E24CD5002B376D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0012125E24CD5002B376D /* WidgetKit.framework */,
+				4EF0012325E24CD5002B376D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EF0012525E24CD5002B376D /* TinyWeather */ = {
+			isa = PBXGroup;
+			children = (
+				4EF0012625E24CD5002B376D /* TinyWeather.swift */,
+				4EF0012825E24CD5002B376D /* TinyWeather.intentdefinition */,
+				4EF0012925E24CD6002B376D /* Assets.xcassets */,
+				4EF0012B25E24CD6002B376D /* Info.plist */,
+			);
+			path = TinyWeather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,15 +248,34 @@
 				4E1E132125E0598800580CD0 /* Sources */,
 				4E1E132225E0598800580CD0 /* Frameworks */,
 				4E1E132325E0598800580CD0 /* Resources */,
+				4EF0013125E24CD6002B376D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4EF0012F25E24CD6002B376D /* PBXTargetDependency */,
 			);
 			name = NeumorPhism;
 			productName = NeumorPhism;
 			productReference = 4E1E132525E0598800580CD0 /* NeumorPhism.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4EF0011E25E24CD5002B376D /* TinyWeatherExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EF0013425E24CD6002B376D /* Build configuration list for PBXNativeTarget "TinyWeatherExtension" */;
+			buildPhases = (
+				4EF0011B25E24CD5002B376D /* Sources */,
+				4EF0011C25E24CD5002B376D /* Frameworks */,
+				4EF0011D25E24CD5002B376D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyWeatherExtension;
+			productName = TinyWeatherExtension;
+			productReference = 4EF0011F25E24CD5002B376D /* TinyWeatherExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -185,6 +287,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					4E1E132425E0598800580CD0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4EF0011E25E24CD5002B376D = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -203,6 +308,7 @@
 			projectRoot = "";
 			targets = (
 				4E1E132425E0598800580CD0 /* NeumorPhism */,
+				4EF0011E25E24CD5002B376D /* TinyWeatherExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +321,15 @@
 				4E1E133525E0598800580CD0 /* LaunchScreen.storyboard in Resources */,
 				4E1E133225E0598800580CD0 /* Preview Assets.xcassets in Resources */,
 				4E1E132F25E0598800580CD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EF0011D25E24CD5002B376D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF0014525E2D332002B376D /* Assets.xcassets in Resources */,
+				4EF0012A25E24CD6002B376D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +349,38 @@
 				4E47D37025E16B80007442E3 /* WeatherModel.swift in Sources */,
 				4E96A90725E246AB00CEF280 /* WeatherForecastView.swift in Sources */,
 				4E96A90B25E246E300CEF280 /* NowWeatherSummary.swift in Sources */,
+				4EF0012D25E24CD6002B376D /* TinyWeather.intentdefinition in Sources */,
+				4EF0015B25E3057D002B376D /* View+Extension.swift in Sources */,
+				4EF0016125E305AD002B376D /* LocationView.swift in Sources */,
 				4E96A90E25E2471900CEF280 /* HoursSummary.swift in Sources */,
 				4E1E132D25E0598800580CD0 /* DaySummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EF0011B25E24CD5002B376D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EF0013C25E2D092002B376D /* SoftInnerShadowViewModifier.swift in Sources */,
+				4EF0014225E2D0A8002B376D /* WeatherViewModel.swift in Sources */,
+				4EF0016825E30684002B376D /* View+Extension.swift in Sources */,
+				4EF0012725E24CD5002B376D /* TinyWeather.swift in Sources */,
+				4EF0013925E2CBE2002B376D /* Color+Extension.swift in Sources */,
+				4EF0012C25E24CD6002B376D /* TinyWeather.intentdefinition in Sources */,
+				4EF0015625E3047A002B376D /* Int+extension.swift in Sources */,
+				4EF0013F25E2D09B002B376D /* WeatherModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EF0012F25E24CD6002B376D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EF0011E25E24CD5002B376D /* TinyWeatherExtension */;
+			targetProxy = 4EF0012E25E24CD6002B376D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4E1E133325E0598800580CD0 /* LaunchScreen.storyboard */ = {
@@ -372,6 +513,7 @@
 		4E1E133A25E0598800580CD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -393,6 +535,7 @@
 		4E1E133B25E0598800580CD0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +549,48 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Elliott.RecreatingViewRepresentableIssue.NeumorPhism;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4EF0013225E24CD6002B376D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXXCHN8K6G;
+				INFOPLIST_FILE = TinyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elliott.RecreatingViewRepresentableIssue.NeumorPhism.TinyWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EF0013325E24CD6002B376D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXXCHN8K6G;
+				INFOPLIST_FILE = TinyWeather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Elliott.RecreatingViewRepresentableIssue.NeumorPhism.TinyWeather;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -428,6 +613,15 @@
 			buildConfigurations = (
 				4E1E133A25E0598800580CD0 /* Debug */,
 				4E1E133B25E0598800580CD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EF0013425E24CD6002B376D /* Build configuration list for PBXNativeTarget "TinyWeatherExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EF0013225E24CD6002B376D /* Debug */,
+				4EF0013325E24CD6002B376D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
