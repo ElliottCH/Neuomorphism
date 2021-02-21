@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-private struct SoftInnerShadowViewModifier<S: Shape> : ViewModifier {
+struct SoftInnerShadowViewModifier<S: Shape> : ViewModifier {
     var shape: S
     var darkShadowColor : Color = .black
     var lightShadowColor : Color = .white
@@ -78,23 +78,4 @@ private struct SoftInnerShadowViewModifier<S: Shape> : ViewModifier {
             addSoftInnerShadow(content)
         )
     }
-}
-
-extension View {
-    public func softInnerShadow<S : Shape>(_ content: S, darkShadow: Color, lightShadow: Color, spread: CGFloat = 0.5, radius: CGFloat = 10) -> some View {
-        modifier(
-            SoftInnerShadowViewModifier(shape: content, darkShadowColor: darkShadow, lightShadowColor: lightShadow, spread: spread, radius: radius)
-        )
-    }
-}
-
-extension View {
-  func inverseMask<Mask>(_ mask: Mask) -> some View where Mask: View {
-    self.mask(mask
-      .foregroundColor(.black)
-      .background(Color.white)
-      .compositingGroup()
-      .luminanceToAlpha()
-    )
-  }
 }
